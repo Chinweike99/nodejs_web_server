@@ -1,6 +1,6 @@
 # "Node.js Tutorial - How to Build a Web Server"
 
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+✅ [Check outvYouTube Channel of Dave Gray for all his tutorials](https://www.youtube.com/DaveGrayTeachesCode).
 
 **Description:**
 
