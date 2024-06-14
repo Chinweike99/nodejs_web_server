@@ -3,6 +3,18 @@ const app = express();
 const path = require('path')
 const PORT = process.env.PORT || 3500;
 
+
+
+
+// using built-in  middlewares
+app.use(express.urlencoded({ extended: false }))
+
+//built-in middlewarefor json 
+app.use(express.json());
+
+// Middleware to serve static files (eg, css)
+app.use(express.static(path.join(__dirname, '/public')));
+
 // #express also accepts regx .... the (.html)? makes the extenion optional when searching on webpages
 app.get('^/$|/index(.html)?', (req, res) => {
     // res.sendFile('./views/index.html', { root: __dirname });
