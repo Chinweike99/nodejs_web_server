@@ -5,10 +5,11 @@
 }
 
 body {
-    font-size: 36px;
+    font-size: 40px;
     min-height: 100vh;
-    color: rgb(10, 10, 144);
+    color: rgb(13, 173, 131);
     background-color: #000;
     display: grid;
     place-content: center;
+    text-align: center;
 }
