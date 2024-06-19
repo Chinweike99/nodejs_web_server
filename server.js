@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path')
 const { logger } = require('./middleware/logEvents');
-const  errorHandler  = require('./middleware/errorHandler');
+const errorHandler  = require('./middleware/errorHandler');
 const cors = require('cors');
 const PORT = process.env.PORT || 3500;
 
@@ -34,6 +34,8 @@ app.use(express.json());
 
 // Middleware to serve static files (finds the static files and applies them.. eg, css)
 app.use(express.static(path.join(__dirname, '/public')));
+
+app.use('/subdir', require('./routes/subdir'));
 
 
 // #express also accepts regx .... the (.html)? makes the extenion optional when searching on webpages
